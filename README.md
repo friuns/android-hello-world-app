@@ -1,6 +1,6 @@
-# Android Hello World App
+# Hello World GitHub Action
 
-This repository contains a simple "Hello World" GitHub Action workflow demonstration.
+This repository demonstrates a simple "Hello World" GitHub Action workflow that can be triggered using the GitHub CLI.
 
 ## 🚀 Hello World GitHub Action
 
@@ -40,6 +40,13 @@ gh run view --workflow=hello-world.yml
 gh run watch
 ```
 
+**Alternatively**, you can use the provided helper script:
+
+```bash
+# The script is already executable
+./run-hello-world.sh
+```
+
 #### Option 2: Using the GitHub UI
 
 1. Navigate to the **Actions** tab in the repository
@@ -57,7 +64,7 @@ The workflow automatically runs when:
 
 ## 📋 Workflow Details
 
-The Hello World workflow includes three main steps:
+The Hello World workflow includes four main steps:
 
 1. **Checkout repository**: Checks out the code from the repository
 2. **Print Hello World**: Displays a welcome message with repository details
