@@ -13,10 +13,18 @@ if ! command -v gh &> /dev/null; then
     exit 1
 fi
 
+# Check if GH_TOKEN is set (for CI/CD environments)
+if [ -z "$GH_TOKEN" ]; then
+    echo "⚠️  Warning: GH_TOKEN environment variable is not set."
+    echo "This is required when running in GitHub Actions or CI/CD environments."
+    echo ""
+fi
+
 # Check if authenticated
 if ! gh auth status &> /dev/null; then
     echo "❌ Error: Not authenticated with GitHub CLI."
     echo "Please run: gh auth login"
+    echo "Or set the GH_TOKEN environment variable in CI/CD environments."
     exit 1
 fi
 
