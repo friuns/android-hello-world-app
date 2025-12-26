@@ -14,7 +14,7 @@
             android:pathData="M54,54m-24,0a24,24 0,1 1,48 0a24,24 0,1 1,-48 0" />
         <path
             android:fillColor="#3DDC84"
-            android:pathData="M54,30v48M30,54h48" 
+            android:pathData="M54,30v48M30,54h48"
             android:strokeWidth="4"
             android:strokeColor="#3DDC84"/>
     </group>
